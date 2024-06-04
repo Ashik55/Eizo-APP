@@ -1,0 +1,18 @@
+{
+	"name": "eizo-app",
+	"version": "1.0.0",
+	"description": "## Steps to run backend on local machine Ask for the `.env` file and place it in the `next` folder. ``` cd next yarn && yarn dev yarn ngrok ``` You will see the ngrok url in the terminal. Copy the url and replace the API_URL in `Keys.ts` file.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+		"deploy": "vercel --prod"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "^3.2.5",
+		"prettier-plugin-tailwindcss": "^0.5.14"
+	}
+}

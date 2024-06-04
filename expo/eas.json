@@ -1,0 +1,39 @@
+{
+	"build": {
+		"development": {
+			"channel": "google-ads",
+			"developmentClient": true,
+			"distribution": "internal",
+			"android": {
+				"buildType": "apk"
+			},
+			"ios": {
+				"resourceClass": "m-medium"
+			}
+		},
+		"dev-simulator": {
+			"developmentClient": true,
+			"distribution": "internal",
+			"ios": {
+				"simulator": true,
+				"resourceClass": "m-medium"
+			}
+		},
+		"preview": {
+			"distribution": "internal",
+			"channel": "preview",
+			"ios": {
+				"resourceClass": "m-medium"
+			}
+		},
+		"production": {
+			"channel": "production",
+			"ios": {
+				"resourceClass": "m-medium"
+			}
+		}
+	},
+	"submit": {
+		"production": {}
+	}
+}

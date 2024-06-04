@@ -1,0 +1,12 @@
+import { Storage } from "@google-cloud/storage";
+
+const cloudStorage = new Storage({
+  projectId: "eizo-413609",
+  credentials: {
+    client_email: "eizoai@eizo-413609.iam.gserviceaccount.com",
+    private_key:
+      "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCYSc3Qti6LPs2T\ntYrlOh4zqveDQGkfL+DxEon/1wKAgHcr32BnHna28R7JysizW8AJLy5mhEmjMM5N\np5qRZTUj5mACrmSmdyOYQKKrg3ixU1If56ATogdbN/0MhYcHU4uOO5nB+eH5q41y\n7P8Q3XQATWPVBrHwY1B+HbFr1BOOemswF38c0Y6/9Hxy+/ebd4H/qy+3iTbqQGiS\nVGgUUR/Ggc+bfSCgsM1C+5XYi6oRutTtzjLh7uy/GNg7NXIVCPxItRWh7Wd4RHbo\nTCiIr197+B+oRcgAjGPR6cvJFpqr69Ylvaew8M0o6CfBtp8FOwp8gyKZGSIsaNuD\n5bqHh2CvAgMBAAECggEAOSMvyoggLHRy02HA7EKDBGW4GhG3n1Dqd+i5yDjWonoQ\nvHBCDk6awgbzw0iHRuw8v/Vo1mP58PWl4fLphnXPm1mbWkYuU1rOCxjtL6bTSMz3\nOitAnz0iv3HhSqpqwC/zY3kvNl1YEMHx/1W2WZCNLnPa6hlp98R7deYUJF3cvI7T\npHwHT8QkeQizWn2bD1Hay5KkI5seNxJkHcK58wOU8UImOOTcurz/siYBESMQP7ae\nwnCwSgotXkiGI1jVKKH+7VErb2pVzMZ2Oq/InJvpdgHwc9NC5hGBfV+Xz7lDm9Pm\nU4VnErG8OQyjUsbHD+KdaBSpERVkb/dR3ZjkjReAiQKBgQDKfSrF/IbdmUv9T9Bh\nUtNPO1Hc5G84VzxaOojxQuHyFgtMbHbuBMqzzf8YZK7Dn7ZYe0xD96V9XzD8pwj0\n+IBiuBSJM5yib7/2j+r73SXUSC+XYt0NJYzGyjx//s9IVUZa0YFbbPhcS4Z1/cpF\nF+fRC9HX/0RPB/bhkuqldhjPNQKBgQDAiHNaGwoxP4IApnSVmO7jA1ehJ9XVnWOz\njlnUUCHwQ9+jqoKVb5TTThfj1Z9QbELyulRYegy5LK8Uz281ZQEKbdeq9fRY+YXV\nfHRBSl1OVugKxwfwstP5c3vPVPRXWw4yEl3wysQILsxfqJpyyDEdR/v1bgwyQUa4\nP25vt9040wKBgCKSDhxxScFJq9yapNQI5QTQ9uAErCxtUGODPOAb8CF5vAIXPpLS\nhJ0AHX5XqjLB8MrYeiPcgweNmfp4tiHEz36LOQ5XnnVpKNf6qD7J+extSprJCT52\nW7uQyZV8tnz9+h4FSNWIHDr9tf4tDzyOoUhigTgkX9AyZucKQz9ukzvFAoGBAKFm\nAaUog7vTLE0VPShnQuMlWyFqvnRLc1gDXkSARGMg0upltwBEwLL+hUJmQx5tExZd\novVkoyPcVI0Sc3yERoISoLfdZU/tJQdZRC+zglJ4wh6+yGY70z0LVV/yLL7KQzUw\ndnWz1O+zI3qRYaAVOC7+uDX/YdQDKqCr9A1NSfMnAoGAFRnqGDHzXhS0wM4nwpYk\nwGQcSMsCc6tvDjYCHxUV4MNAldRGsgxLi9N5W87a6tCEgMUVwxgIMbXKmPP8V0+z\n4rkO/jzcZQQkw88D8lCwezIJDZxvHyag2Q5EIklf2g4HMLMYj7Mnvb6eCizER/Qb\nMmMK5veUncOTCam0HNY0nj0=\n-----END PRIVATE KEY-----\n",
+  },
+});
+
+export { cloudStorage };

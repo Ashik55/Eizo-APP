@@ -1,0 +1,71 @@
+{
+	"expo": {
+		"name": "EIZO.ai",
+		"slug": "eizoai",
+		"version": "1.1.8",
+		"orientation": "portrait",
+		"icon": "./assets/images/icon.png",
+		"scheme": "com.googleusercontent.apps.414281175059-89qhe2mk9evnebduf244j347h2cuoa6u",
+		"userInterfaceStyle": "automatic",
+		"splash": {
+			"image": "./assets/images/splash.png",
+			"resizeMode": "cover",
+			"backgroundColor": "#2A2A2D"
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.alphabyte.eizoai",
+			"buildNumber": "18",
+			"usesAppleSignIn": true,
+			"icon": "./assets/images/icon.png",
+			"config": {
+				"usesNonExemptEncryption": false
+			}
+		},
+		"android": {
+			"icon": "./assets/images/icon.png",
+			"package": "com.alphabyte.eizoai",
+			"versionCode": 18
+		},
+		"plugins": [
+			"expo-router",
+			"expo-apple-authentication",
+			[
+				"expo-image-picker",
+				{
+					"photosPermission": "The app accesses your photos to let you share them with your friends."
+				}
+			],
+			[
+				"expo-media-library",
+				{
+					"photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+					"savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+					"isAccessMediaLocationEnabled": true
+				}
+			]
+		],
+		"experiments": {
+			"typedRoutes": true
+		},
+		"extra": {
+			"router": {
+				"origin": false
+			},
+			"eas": {
+				"projectId": "b0047148-3d04-4f70-909c-04af2abdf20a"
+			}
+		},
+		"owner": "alphabyte",
+		"runtimeVersion": {
+			"policy": "appVersion"
+		},
+		"updates": {
+			"url": "https://u.expo.dev/b0047148-3d04-4f70-909c-04af2abdf20a"
+		}
+	},
+	"react-native-google-mobile-ads": {
+		"ios_app_id": "ca-app-pub-7857055136883344~2103577634"
+	}
+}
